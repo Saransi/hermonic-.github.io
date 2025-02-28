@@ -1,0 +1,264 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: #cfcfde;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 0 13px 11px rgba(0, 0, 0, 1)
+  }
+
+  header {
+    background-image: url("../SharedScreenshot33.jpg");
+    color: #404057;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   
+  }
+
+  @keyframes move{
+
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+    }
+
+  header h1 {
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 700;
+    transform: translateY(0);
+    animation: move 1s ease-in-out;
+  }
+  header p{
+    font-size: 17px;
+    font-weight: bold;
+    color: #d1d1f7;
+    transform: translateY(0);
+    animation: move 1s ease-in;
+    
+  }
+
+  nav {
+    background: #444;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+  }
+
+  nav a {
+    color: #BC8F8F;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #FFE4E1;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #5d6478;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .about, .services, .contact {
+    background: #E6E6FA;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact input, .contact textarea {
+    padding: 12px;
+    border: 1px solid #B0C4DE;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+
+  .contact input:focus, .contact textarea:focus {
+    border-color: #5580ca;
+    outline: none;
+  }
+
+  .contact button {
+    padding: 12px;
+    background: #5F9EA0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+
+  .contact button:hover {
+    background: #BC8F8F;
+  }
+
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .text{
+    color: rgb(141, 107, 107);
+    font-weight: bold;
+  }
+  .icon{
+    width: 19px;
+    margin: -3px 7px;
+} 
+.icon1{
+  width: 49px;
+  margin: -12px 7px;
+} 
+
+.icon2{
+  width: 44px;
+  margin: 2px 7px;
+  padding: 4px;
+  border-radius: 50%;
+} 
+
+.main-icons{
+ 
+  display: flex;
+  justify-content: end;
+}
+
+.main-icons2{
+  
+  display: flex;
+  justify-content:start;
+  margin: 8px 60px;
+ 
+}
+
+.top{
+  background-color: #786363;
+  line-height: 2px;
+  padding: 13px 21px;
+  border: 3px solid #a5a5af;
+  border-radius: 8px;
+  font-size: 10px;
+  color: #E6E6FA;
+  transition: 599ms;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.top:hover{
+    
+  color: #FFEFD5;
+  background: #7D5B5B;
+  border: 3px solid #402D2D;
+
+}
+
+.span{
+
+  display: flex;
+  justify-content: start;
+
+}
+
+.a{
+  color: #E6E6FA;
+  transition: 399ms;
+  transition: transform 0.3s ease;
+}
+
+.a:hover{
+  transform: scale(1.05);
+}
+
+
+.icon3{
+
+  margin: 0 1419px;
+  }
+  
+  #darkModeToggle {
+  background: none;
+  border: none;
+  margin: -4px -1px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #d8d8fe;
+  transition: 399ms;
+  transition: transform 0.3s ease;
+  }
+  
+  #darkModeToggle:hover{
+  color: rgb(152, 136, 255);
+  transform: scale(1.05);
+  
+  }

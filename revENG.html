@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online booking</title>
+    <link rel="stylesheet" href="./revENG.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Online booking</h2>
+        <form id="reservationForm">
+            <label for="name">Online booking Name and surname:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone"> phone number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="date">Reservation date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Reservation time:</label>
+            <input type="time" id="time" required>
+
+            <button type="submit">Confirmation of reservation</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+
+    <script>
+        document.getElementById('reservationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+         
+            const message = document.getElementById('message');
+            message.textContent = "Reservation successfully registered! Transferring to payment page...";
+            message.style.color = "green";
+
+          
+            setTimeout(function() {
+                window.location.href = "http://127.0.0.1:5500/payENG.html";
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
